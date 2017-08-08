@@ -4,23 +4,28 @@
     src: url('assets/fonts/Alice-Regular.ttf');
 }
 
+html {
+    height: 100%
+}
+
 body {
-  padding-bottom: 40px;
   background-color: #003045;
   color: #ffffff;
   text-shadow: 0 1px 3px rgba(0,0,0,.5);
   -webkit-box-shadow: inset 0 0 100px rgba(0,0,0,.5);
   box-shadow: inset 0 0 100px rgba(0,0,0,.5);
+  font-family: "Alice";
+}
 
+.mainContainer {
+    max-width: 980px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 40px 15px;
 }
 
 .content {
-    max-width: 1280px;
-    margin-left: auto;
-    margin-right: auto;
-    padding-top: 40px;
-    padding-left: 15px;
-    padding-right: 15px;
+    font-size: 18px;
 }
 
 .titleContainer {
@@ -30,10 +35,14 @@ body {
 
 .title {
   width: 100%;
+  margin-top: 25px;
+  margin-bottom: 10px;
 }
 
 .subTitle {
-   font-family: 'Alice';
+   margin-bottom: 15px;
+   font-size: 30px;
+   text-align: center;
 }
 
 .header {
@@ -43,6 +52,7 @@ body {
 
 .googlePlayBadgeContainer {
     text-align: center;
+    margin-top: 40px;
 }
 
 .googlePlayBadge {
@@ -64,30 +74,24 @@ body {
     height: 100%;
 }
 
-/* Declare heights because of positioning of img element */
-
-/* MARKETING CONTENT
--------------------------------------------------- */
-
-/* Center align the text within the three columns below the carousel */
-.marketing .col-lg-4 {
-  margin-bottom: 20px;
-  text-align: center;
+.slide {
+    width: 100%;
+    height: auto;
 }
-.marketing h2 {
-  font-weight: normal;
-}
-.marketing .col-lg-4 p {
-  margin-right: 10px;
-  margin-left: 10px;
-}
-
 
 /* Featurettes
 ------------------------- */
 
+.features {
+  margin-top: 40px;
+}
+
 .featurette-divider {
-  margin: 80px 0; /* Space out the Bootstrap <hr> more */
+  margin: 40px 0; /* Space out the Bootstrap <hr> more */
+}
+
+.lead {
+    font-size: 18px;
 }
 
 /* Thin out the marketing headings */
@@ -95,18 +99,37 @@ body {
   font-weight: 300;
 }
 
+a:link {
+    color: #E9A302;
+    text-decoration: none;
+}
+
+a:visited {
+    color: #E9A302;
+    text-decoration: none;
+}
 
 /* RESPONSIVE CSS
 -------------------------------------------------- */
 
 @media (min-width: 768px) {
-  .featurette-heading {
-    font-size: 50px;
+  .subTitle {
+    font-size: 40px;
+  }
+  .lead {
+    font-size: 22px;
   }
 }
 
 @media (min-width: 992px) {
-  .featurette-heading {
-    margin-top: 120px;
-  }
+
+    .title {
+         margin-top: 50px;
+         margin-bottom: 20px;
+    }
+
+   .subTitle {
+         margin-bottom: 25px;
+    }
+
 }
