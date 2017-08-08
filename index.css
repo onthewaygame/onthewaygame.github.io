@@ -30,17 +30,17 @@ body {
 
 .titleContainer {
     margin: auto;
-    max-width: 724px;
+    max-width: 600px;
 }
 
 .title {
   width: 100%;
   margin-top: 25px;
-  margin-bottom: 10px;
+  margin-bottom: 25px;
 }
 
 .subTitle {
-   margin-bottom: 15px;
+   margin-bottom: 20px;
    font-size: 30px;
    text-align: center;
 }
@@ -80,7 +80,7 @@ body {
 }
 
 .features {
-  margin-top: 40px;
+  margin-top: 20px;
 }
 
 .featurette-divider {
@@ -121,11 +121,16 @@ a:visited {
 
     .title {
          margin-top: 50px;
-         margin-bottom: 20px;
+         margin-bottom: 50px;
     }
 
+    .features {
+        margin-top: 40px;
+    }
+
+
    .subTitle {
-         margin-bottom: 25px;
+         margin-bottom: 40px;
     }
 
 }
