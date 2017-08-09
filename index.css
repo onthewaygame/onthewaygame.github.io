@@ -4,17 +4,13 @@
     src: url('assets/fonts/Alice-Regular.ttf');
 }
 
-html {
-    height: 100%;
-}
-
 body {
-  background-color: #003045;
-  color: #ffffff;
-  text-shadow: 0 1px 3px rgba(0,0,0,.5);
-  -webkit-box-shadow: inset 0 0 100px rgba(0,0,0,.8);
-  box-shadow: inset 0 0 100px rgba(0,0,0,.8);
-  font-family: "Alice";
+    color: #ffffff;
+    background-color: #003045;
+    text-shadow: 0 1px 3px rgba(0,0,0,.5);
+    -webkit-box-shadow: inset 0 0 100px rgba(0,0,0,.8);
+    box-shadow: inset 0 0 100px rgba(0,0,0,.8);
+    font-family: "Alice";
 }
 
 .mainContainer {
