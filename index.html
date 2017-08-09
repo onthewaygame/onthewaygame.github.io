@@ -18,7 +18,7 @@
     <link rel="apple-touch-icon" sizes="144x144" href="/apple-icon-144x144.png">
     <link rel="apple-touch-icon" sizes="152x152" href="/apple-icon-152x152.png">
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-icon-180x180.png">
-    <link rel="icon" type="image/png" sizes="192x192"  href="/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="/android-icon-192x192.png">
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png">
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
@@ -45,6 +45,7 @@
 
         ga('create', 'UA-67792333-2', 'auto');
         ga('send', 'pageview');
+
     </script>
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
@@ -72,7 +73,8 @@
         <div class="subTitle">Puzzle game with physics and drawing for Android</div>
 
         <div class="videoContainer">
-            <iframe class="video" width="1280" height="720" src="https://www.youtube.com/embed/syvMA3NYljY?VQ=HD720" frameborder="0" allowfullscreen></iframe>
+            <iframe class="video" width="1280" height="720" src="https://www.youtube.com/embed/syvMA3NYljY?hd=1&vq=hd720"
+                    frameborder="0" allowfullscreen></iframe>
         </div>
 
         <!--
@@ -83,6 +85,7 @@
                     <li data-target="#myCarousel" data-slide-to="2"></li>
                     <li data-target="#myCarousel" data-slide-to="3"></li>
                     <li data-target="#myCarousel" data-slide-to="4"></li>
+                    <li data-target="#myCarousel" data-slide-to="5"></li>
                     <li data-target="#myCarousel" data-slide-to="5"></li>
                 </ol>
                 <div class="carousel-inner" role="listbox">
@@ -120,7 +123,8 @@
 
             <div class="row featurette">
                 <div class="col-md-6 lead ">
-                    Your adventure in dangerous jungles begins. Draw the way for the orb, collect all stars and reach the exit.
+                    Your adventure in dangerous jungles begins. Draw the way for the orb, collect all stars and reach
+                    the exit.
                 </div>
                 <div class="col-md-6">
                     <img class="slide" src="assets/img/slide2.png" alt="Feature 1">
@@ -158,7 +162,8 @@
                     <ul type="round">
                         <li>Exciting physics;</li>
                         <li>Drawing of physical lines on the screen;</li>
-                        <li>Various physical mechanics, such as gravity switches, portals, rotated obstacle, impulses;</li>
+                        <li>Various physical mechanics, such as gravity switches, portals, rotated obstacle, impulses;
+                        </li>
                         <li>64 interesting, unique level;</li>
                         <li>Beautiful music;</li>
                     </ul>
@@ -180,7 +185,8 @@
             </div>
 
             <div class="googlePlayBadgeContainer">
-                <a id="googlePlayBadgeId" href="https://play.google.com/store/apps/details?id=com.uvarov.ontheway">
+                <a id="googlePlayBadgeId" target="_blank"
+                   href="https://play.google.com/store/apps/details?id=com.uvarov.ontheway">
                     <img class="googlePlayBadge" src="assets/img/google-play-badge.png">
                 </a>
             </div>
@@ -189,7 +195,6 @@
 
     <footer>
         <hr class="featurette-divider">
-        <p class="pull-right"><a href="#">Back to top</a></p>
         <p>&copy; Uvarov Boris, 2017. &middot; <a href="info.html">Info</a></p>
     </footer>
 </div>
@@ -200,9 +205,7 @@
 <!-- Placed at the end of the document so the pages load faster -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 <script>
-        window.jQuery || document.write('<script src="assets/js/vendor/jquery.min.js"><\/script>')
-
-
+window.jQuery || document.write('<script src="assets/js/vendor/jquery.min.js"><\/script>')
 
 </script>
 <script src="dist/js/bootstrap.min.js"></script>
@@ -212,32 +215,9 @@
 <script src="assets/js/ie10-viewport-bug-workaround.js"></script>
 
 <script>
-
-function createFunctionWithTimeout(callback, opt_timeout) {
-  var called = false;
-  function fn() {
-    if (!called) {
-      called = true;
-      callback();
-    }
-  }
-  setTimeout(fn, opt_timeout || 1000);
-  return fn;
-}
-
- $(document).on("click", '#googlePlayBadgeId', function(event) {
-    event.preventDefault();
-    ga('send', 'event', 'GooglePlayBadge', 'click', {
-        hitCallback: createFunctionWithTimeout(function() {
-            window.open("https://play.google.com/store/apps/details?id=com.uvarov.ontheway","_self")
-    })
- });
-
-        window.open("https://play.google.com/store/apps/details?id=com.uvarov.ontheway","_self")
-        // your ajax call here
-    });
-
-
+$(document).on("click", '#googlePlayBadgeId', function(event) {
+    ga('send', 'event', 'GooglePlayBadge', 'click')
+});
 
 </script>
 
