@@ -31,15 +31,15 @@ body {
 }
 
 .title {
-  width: 100%;
-  margin-top: 25px;
-  margin-bottom: 25px;
+    width: 100%;
+    margin-top: 25px;
+    margin-bottom: 25px;
 }
 
 .subTitle {
-   margin-bottom: 20px;
-   font-size: 30px;
-   text-align: center;
+    margin-bottom: 20px;
+    font-size: 30px;
+    text-align: center;
 }
 
 .header {
@@ -77,11 +77,11 @@ body {
 }
 
 .features {
-  margin-top: 20px;
+    margin-top: 20px;
 }
 
 .featurette-divider {
-  margin: 40px 0;
+    margin: 40px 0;
 }
 
 .lead {
@@ -89,7 +89,7 @@ body {
 }
 
 .featurette-heading {
-  font-weight: 300;
+    font-weight: 300;
 }
 
 a:link {
@@ -102,23 +102,37 @@ a:visited {
     text-decoration: none;
 }
 
+a:hover {
+    text-decoration: underline;
+}
+
+.slideLink {
+    display: inline-block;
+    padding: 2px;
+    transition: background-color 0.5s ease-out;
+}
+.slideLink:hover {
+    background-color: #E9A302;
+    transition: none; 
+}
+
 /* RESPONSIVE CSS
 -------------------------------------------------- */
 
 @media (min-width: 768px) {
-  .subTitle {
-    font-size: 36px;
-  }
-  .lead {
-    font-size: 22px;
-  }
+    .subTitle {
+        font-size: 36px;
+    }
+    .lead {
+        font-size: 22px;
+    }
 }
 
 @media (min-width: 992px) {
 
     .title {
-         margin-top: 50px;
-         margin-bottom: 50px;
+        margin-top: 50px;
+        margin-bottom: 50px;
     }
 
     .features {
@@ -126,8 +140,8 @@ a:visited {
     }
 
 
-   .subTitle {
-         margin-bottom: 40px;
+    .subTitle {
+        margin-bottom: 40px;
     }
 
 }
