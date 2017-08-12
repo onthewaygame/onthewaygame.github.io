@@ -106,10 +106,6 @@ a:visited {
     text-decoration: underline;
 }
 
-.nonePointerEvents {
-    pointer-events: none;
-}
-
 .slideLink {
     display: inline-block;
     padding: 2px;
