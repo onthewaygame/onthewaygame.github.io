@@ -102,8 +102,12 @@ a:visited {
     text-decoration: none;
 }
 
-a:hover {
+.linkDecoration:hover {
     text-decoration: underline;
+}
+
+.nonePointerEvents {
+    pointer-events: none;
 }
 
 .slideLink {
@@ -125,11 +129,8 @@ a:hover {
     }
     .lead {
         font-size: 22px;
-    }
-}
-
-@media (min-width: 992px) {
-
+    }   
+    
     .title {
         margin-top: 50px;
         margin-bottom: 50px;
@@ -143,5 +144,4 @@ a:hover {
     .subTitle {
         margin-bottom: 40px;
     }
-
 }
